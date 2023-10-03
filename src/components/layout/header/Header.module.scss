@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Rubik&display=swap");
+
+* {
+  text-decoration: none;
+  font-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  .header_wrapper {
+    width: 86%;
+    display: flex;
+    justify-content: start;
+
+    padding: 1px;
+
+    .logo {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60px;
+      }
+    }
+    .links {
+      display: flex;
+      width: 100%;
+      padding: 10px;
+      .linksD {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 300;
+        font-family: "Kanit", sans-serif;
+        font-family: "Rubik", sans-serif;
+
+        padding: 10px;
+        width: 5rem;
+        color: rgb(0, 0, 0);
+        transition: 0.2s;
+        font-size: 20px;
+
+        &:hover {
+          color: #5865f2;
+        }
+
+        &:first-child {
+          width: 10rem;
+        }
+
+        &:nth-child(3) {
+          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
+          background-clip: border-box;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+  }
+}

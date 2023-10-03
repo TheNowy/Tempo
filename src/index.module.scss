@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);@import url(https://fonts.googleapis.com/css?family=Kanit:600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+}
+
+// ::selection {
+//   background-color: #404040;
+//   color: rgb(255, 255, 255);
+// }
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//   background: rgb(162, 162, 162);
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: rgb(104, 104, 104);
+//   border-radius: 0 0 3px 3px;
+// }
+
+::-webkit-scrollbar {
+  width: 0;
+}
