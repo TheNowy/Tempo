@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Layout } from "./components/layout/Layout.tsx";
-import PropagateLoader from "react-spinners/PropagateLoader";
 import "./App.scss";
 
 export const App = () => {

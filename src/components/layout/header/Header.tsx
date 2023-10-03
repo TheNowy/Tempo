@@ -1,11 +1,29 @@
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Dropmenu from "./dropmenu/Dropmenu";
 import scss from "./Header.module.scss";
 
 export const Header: React.FC = () => {
+  const [headerScroll, setHeaderScroll] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [openProfile, setOpenProfile] = useState(false);
+
+  useEffect(() => {
+    const changeBackground = () => {
+      if (typeof window !== "undefined" && window.scrollY >= 10) {
+        setHeaderScroll(true);
+      } else {
+        setHeaderScroll(false);
+      }
+    };
+
+    changeBackground();
+    -window.addEventListener("scroll", changeBackground);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,7 +31,10 @@ export const Header: React.FC = () => {
 
   return (
     <nav>
-      <div className={scss.header}>
+      <div
+        className={
+          headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
+        }>
         <div className={scss.header_wrapper}>
           <NavLink to="/" className={scss.logo}>
             <img src="../../../../../logo.png" alt="" />

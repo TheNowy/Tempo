@@ -7,7 +7,9 @@ const Home = () => {
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
           <div className={scss.home_content}>
-            <div className={scss.main_page}></div>
+            <div className={scss.main_page}>
+              <h1>Soon...</h1>
+            </div>
           </div>
         </div>
       </div>

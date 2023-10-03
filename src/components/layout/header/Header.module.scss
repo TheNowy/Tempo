@@ -8,12 +8,17 @@
 }
 
 .header {
+  position: fixed;
   background-color: rgb(255, 255, 255);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 10px 0;
+
+  &.active {
+    padding: 0;
+  }
 
   .header_wrapper {
     width: 86%;
@@ -28,7 +33,7 @@
       justify-content: center;
       align-items: center;
       img {
-        width:50px;
+        width: 50px;
       }
     }
     .links {
@@ -62,7 +67,7 @@
           background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
           background-clip: border-box;
           -webkit-background-clip: text;
-          background-clip: text; 
+          background-clip: text;
           -webkit-text-fill-color: rgba(0, 0, 0, 0);
           width: 4rem;
         }
