@@ -37,7 +37,10 @@ export const Header: React.FC = () => {
         }>
         <div className={scss.header_wrapper}>
           <NavLink to="/" className={scss.logo}>
-            <img src="../../../../../logo.png" alt="" />
+            <img
+              src="https://w.forfun.com/fetch/89/895d02625ceca1b931ec8effadb64b5b.jpeg"
+              alt=""
+            />
             {/* <h3 className={scss.logo_text}>Lucky</h3> */}
           </NavLink>
           <div className={scss.links}>
