@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
             {/* <h3 className={scss.logo_text}>Lucky</h3> */}
           </NavLink>
           <div className={scss.links}>
-            <NavLink to="https://discord.gg/HpBkVca2" className={scss.linksD}>
+            <NavLink to="https://discord.gg/W8BHbJM7" className={scss.linksD}>
               Дискорд Сервер
             </NavLink>
             <NavLink to="/" className={scss.linksD}>

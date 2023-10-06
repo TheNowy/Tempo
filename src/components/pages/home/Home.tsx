@@ -1,4 +1,5 @@
 import scss from "./Home.module.scss";
+// import MainTitle from "./MainTitle/MainTitle";
 // import { Tilt } from "react-tilt";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div className={scss.container}>
           <div className={scss.home_content}>
             <div className={scss.main_page}>
+              {/* <MainTitle /> */}
               <h1>Soon...</h1>
             </div>
           </div>

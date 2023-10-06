@@ -12,17 +12,31 @@
   flex-direction: column;
   z-index: 9999;
 
-  // h3 {
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
-  //   top: -30px;
-  //   font-size: 25px;
-  //   text-transform: uppercase;
-  //   text-shadow: 0 0 3px black;
-  // }
+  h3 {
+    color: rgb(81, 81, 81);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-right: -10px;
+    margin-top: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: shadow_anim 1s infinite;
+  }
+
+  @keyframes shadow_anim {
+    0% {
+      text-shadow: 0 0 10px black;
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 0 0 10px black;
+    }
+  }
 
   img {
     width: 150px;
