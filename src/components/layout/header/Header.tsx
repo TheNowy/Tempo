@@ -37,18 +37,15 @@ export const Header: React.FC = () => {
         }>
         <div className={scss.header_wrapper}>
           <NavLink to="/" className={scss.logo}>
-            <img
-              src="https://w.forfun.com/fetch/89/895d02625ceca1b931ec8effadb64b5b.jpeg"
-              alt=""
-            />
+            <img src="../../../../logo.png" alt="" />
             {/* <h3 className={scss.logo_text}>Lucky</h3> */}
           </NavLink>
           <div className={scss.links}>
             <NavLink to="https://discord.gg/W8BHbJM7" className={scss.linksD}>
               Дискорд Сервер
             </NavLink>
-            <NavLink to="/" className={scss.linksD}>
-              Команды
+            <NavLink to="/Commands" className={scss.linksD}>
+              CVA Команда
             </NavLink>
             <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
               Nowy

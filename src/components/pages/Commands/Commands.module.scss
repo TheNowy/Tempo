@@ -1,0 +1,66 @@
+.commands_main {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main_title {
+    position: absolute;
+    top: 8rem;
+    width: 90%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    h3 {
+      color: black;
+      text-transform: uppercase;
+      font-size: 45px;
+      font-weight: 600;
+      font-family: "Rubik";
+
+      span {
+        text-transform: none;
+      }
+    }
+  }
+  .mini_title {
+    position: absolute;
+    top: 15rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+    }
+    .discord_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: white;
+      font-size: 20px;
+      background-color: #5865f2;
+      border: none;
+      padding: 7px 30px;
+      border-radius: 5px;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(234, 234, 234);
+        background-color: #4d59d5;
+      }
+    }
+  }
+}

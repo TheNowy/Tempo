@@ -1,5 +1,5 @@
 import Home from "../../pages/home/Home";
-import Catalog from '../../pages/Catalog/Catalog'
+import Commands from "../../pages/Commands/Commands";
 import { Routes, Route } from "react-router-dom";
 
 export const Main = () => {
@@ -7,7 +7,8 @@ export const Main = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Catalog" element={<Catalog />} />
+        <Route path="/Commands" element={<Commands />} />
+        <Route path="/commands" element={<Commands />} />
       </Routes>
     </div>
   );
