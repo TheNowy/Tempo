@@ -4,7 +4,7 @@ import { useState } from "react";
 const Sandbox = () => {
   const [toggleState, setToggleState] = useState(1);
 
-  const ToggleTab = (index) => {
+  const ToggleTab = (index: number) => {
     setToggleState(index);
   };
 
