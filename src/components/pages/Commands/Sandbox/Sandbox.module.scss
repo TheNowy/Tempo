@@ -1,0 +1,46 @@
+.Page_Wrapper {
+  width: 100%;
+  display: flex;
+
+  .Drop_Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .Drop_Vs_Box {
+      margin: 10px;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      width: 20rem;
+      padding: 3px 20px;
+      border: solid red 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Drop_Uvs_Box {
+      margin: 10px;
+      cursor: pointer;
+      color: white;
+      width: 20rem;
+      padding: 10px 20px;
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .Content {
+    width: 62.6rem;
+    display: none;
+
+    h1 {
+      width: 30rem;
+    }
+  }
+  .Active_Content {
+    display: block;
+  }
+}

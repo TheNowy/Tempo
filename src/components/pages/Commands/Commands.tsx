@@ -1,5 +1,6 @@
 import Style from "./Commands.module.scss";
 import { Link } from "react-router-dom";
+import Sandbox from "./Sandbox/Sandbox";
 
 const Commands = () => {
   return (
@@ -18,7 +19,7 @@ const Commands = () => {
         </div>
         <div className={Style.cva_members}>
           <div className={Style.menu_sva}>
-            <h1>Soon...</h1>
+            <Sandbox />
           </div>
         </div>
       </div>
