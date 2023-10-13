@@ -15,37 +15,39 @@ const Sandbox = () => {
   return (
     <>
       <div className={Style.Page_Wrapper}>
-        <div className={Style.Drop_Box}>
-          <div
-            className={
-              toggleState === 1 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
-            }
-            onClick={() => ToggleTab(1)}>
-            <FormatListBulletedIcon />
-            Игроки
-          </div>
-          <div
-            className={
-              toggleState === 2 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
-            }
-            onClick={() => ToggleTab(2)}>
-            <SupervisorAccountIcon /> Главы
-          </div>
-          <div
-            className={
-              toggleState === 3 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
-            }
-            onClick={() => ToggleTab(3)}>
-            <AdminPanelSettingsIcon />
-            Администрация
-          </div>
-          <div
-            className={
-              toggleState === 4 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
-            }
-            onClick={() => ToggleTab(4)}>
-            <AdminPanelSettingsIcon />
-            Заявки в Клан
+        <div className={Style.container}>
+          <div className={Style.Drop_Box}>
+            <div
+              className={
+                toggleState === 1 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
+              }
+              onClick={() => ToggleTab(1)}>
+              <FormatListBulletedIcon />
+              Игроки
+            </div>
+            <div
+              className={
+                toggleState === 2 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
+              }
+              onClick={() => ToggleTab(2)}>
+              <SupervisorAccountIcon /> Главы
+            </div>
+            <div
+              className={
+                toggleState === 3 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
+              }
+              onClick={() => ToggleTab(3)}>
+              <AdminPanelSettingsIcon />
+              Администрация
+            </div>
+            <div
+              className={
+                toggleState === 4 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
+              }
+              onClick={() => ToggleTab(4)}>
+              <AdminPanelSettingsIcon />
+              Заявки в Клан
+            </div>
           </div>
         </div>
         <div
@@ -65,6 +67,36 @@ const Sandbox = () => {
           <div className={Style.players}>
             <h1>
               <span>Gay</span> - CVA | chelovek5614
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Frik</span> - CVA | Lacksy
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Pidor</span> - CVA | Meepokin
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Bunny</span> - CVA | KaYd0
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Dragon</span> - CVA | K1rieshich
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Dragon</span> - CVA | M4RS1
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Imperator</span> - CVA | Nowy
             </h1>
           </div>
         </div>
