@@ -59,7 +59,7 @@ const Sandbox = () => {
           </div>
           <div className={Style.players}>
             <h1>
-              <span>Imperator</span> - CVA | Nowy
+              <span>Dragon</span> - CVA | tufleva
             </h1>
           </div>
           <div className={Style.players}>
