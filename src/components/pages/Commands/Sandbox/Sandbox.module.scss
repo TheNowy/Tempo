@@ -1,46 +1,97 @@
 .Page_Wrapper {
   width: 100%;
   display: flex;
-
+  justify-content: center;
+  position: absolute;
+  top: 300px;
+  padding: 10px 0;
+  left: 0;
   .Drop_Box {
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px #ececec;
+    background-color: #fff;
 
     .Drop_Vs_Box {
-      margin: 10px;
+      border-radius: 10px;
       cursor: pointer;
       color: rgb(0, 0, 0);
       width: 20rem;
-      padding: 3px 20px;
-      border: solid red 1px;
+      padding: 20px 20px;
+      font-weight: 100;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
+
+      svg {
+        margin-right: 6px;
+        color: rgb(0, 0, 0);
+      }
+
+      &:hover {
+        background-color: #e8e8e8a5;
+      }
     }
 
     .Drop_Uvs_Box {
-      margin: 10px;
+      background-color: #eee9f8;
+      border-radius: 10px;
       cursor: pointer;
-      color: white;
+      color: #7e50e1;
       width: 20rem;
-      padding: 10px 20px;
-      background: red;
+      padding: 20px 20px;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
+      svg {
+        margin-right: 6px;
+        color: #7e50e1;
+      }
     }
   }
   .Content {
-    width: 62.6rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     display: none;
 
-    h1 {
-      width: 30rem;
+    .players {
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 14px;
+      position: relative;
+      background-color: #fff;
+      border-radius: 20px;
+      border: solid 1px #ececec;
+      h1 {
+        font-weight: 100;
+        font-size: 18px;
+
+        span {
+          background-color: #7e50e1;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
+      }
     }
   }
   .Active_Content {
-    display: block;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    position: relative;
+    padding: 20px 10px;
   }
 }

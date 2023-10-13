@@ -12,7 +12,7 @@ const Commands = () => {
           </h3>
         </div>
         <div className={Style.mini_title}>
-          <p>Всего: 30 игроков</p>
+          <p>Всего: 25 игроков</p>
           <Link to="https://discord.gg/W8BHbJM7">
             <button className={Style.discord_button}>Discord</button>
           </Link>

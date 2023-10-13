@@ -15,10 +15,13 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  z-index: 1000000000;
+  background-color: #f3f3f3;
 
   &.active {
     padding: 0;
-    background-color: rgba(246, 246, 246, 0.926);
+    background-color: #fefcfc;
+    box-shadow: 0 0 5px #00000046;
   }
 
   .header_wrapper {

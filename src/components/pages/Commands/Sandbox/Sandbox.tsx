@@ -1,6 +1,10 @@
 import Style from "./Sandbox.module.scss";
 import { useState } from "react";
 
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+
 const Sandbox = () => {
   const [toggleState, setToggleState] = useState(1);
 
@@ -17,6 +21,7 @@ const Sandbox = () => {
               toggleState === 1 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
             }
             onClick={() => ToggleTab(1)}>
+            <FormatListBulletedIcon />
             Игроки
           </div>
           <div
@@ -24,48 +29,62 @@ const Sandbox = () => {
               toggleState === 2 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
             }
             onClick={() => ToggleTab(2)}>
-            Главы
+            <SupervisorAccountIcon /> Главы
           </div>
           <div
             className={
               toggleState === 3 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
             }
             onClick={() => ToggleTab(3)}>
+            <AdminPanelSettingsIcon />
             Администрация
+          </div>
+          <div
+            className={
+              toggleState === 4 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
+            }
+            onClick={() => ToggleTab(4)}>
+            <AdminPanelSettingsIcon />
+            Заявки в Клан
           </div>
         </div>
         <div
           className={`${Style.Content} ${
             toggleState === 1 ? Style.Active_Content : ""
           }`}>
-          <h1>Content 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            a! Deserunt sequi quas ipsam similique facilis veniam impedit,
-            consequatur ex dicta vitae dolore soluta quisquam distinctio rerum
-          </p>
+          <div className={Style.players}>
+            <h1>
+              <span>Bunny</span> - CVA | xDeadForMilfa
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Imperator</span> - CVA | Nowy
+            </h1>
+          </div>
+          <div className={Style.players}>
+            <h1>
+              <span>Titan</span> - CVA | chelovek5614
+            </h1>
+          </div>
         </div>
         <div
           className={`${Style.Content} ${
             toggleState === 2 ? Style.Active_Content : ""
           }`}>
           <h1>Content 2</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            a! Deserunt sequi quas ipsam similique facilis veniam impedit,
-            consequatur ex dicta vitae dolore soluta quisquam distinctio rerum
-          </p>
         </div>
         <div
           className={`${Style.Content} ${
             toggleState === 3 ? Style.Active_Content : ""
           }`}>
           <h1>Content 3</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            a! Deserunt sequi quas ipsam similique facilis veniam impedit,
-            consequatur ex dicta vitae dolore soluta quisquam distinctio rerum
-          </p>
+        </div>
+        <div
+          className={`${Style.Content} ${
+            toggleState === 4 ? Style.Active_Content : ""
+          }`}>
+          <h1>Content 4</h1>
         </div>
       </div>
     </>
