@@ -10,7 +10,7 @@
   .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 
     .Drop_Box {
       margin-right: 30px;
@@ -19,7 +19,6 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      top: -14.5rem;
       padding: 10px;
       border-radius: 20px;
       border: solid 1px #ececec;
@@ -73,8 +72,8 @@
     display: none;
 
     .players {
-      margin: 10px;
       width: 60rem;
+      margin-bottom: 10px;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -93,6 +92,10 @@
           padding: 5px 10px;
           border-radius: 10px;
         }
+
+        .Cusrom {
+          background: linear-gradient(to right, gold, rgb(232, 151, 0));
+        }
       }
     }
   }
@@ -100,7 +103,7 @@
     width: 100%;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     max-width: 100%;
     min-height: 100vh;
 
