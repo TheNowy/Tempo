@@ -119,6 +119,11 @@ const Sandbox = () => {
                 <span className={Style.Cusrom}>Pidor</span> - CVA | Meepokin
               </h1>
             </div>
+            <div className={Style.players}>
+              <h1>
+                <span className={Style.Cusrom_2}>Svintus</span> - CVA | .Батя твоя
+              </h1>
+            </div>
           </div>
           <div
             className={`${Style.Content} ${
