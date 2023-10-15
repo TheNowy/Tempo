@@ -91,6 +91,11 @@ const Sandbox = () => {
             </div>
             <div className={Style.players}>
               <h1>
+                <span>Bunny</span> - CVA | SlivRW
+              </h1>
+            </div>
+            <div className={Style.players}>
+              <h1>
                 <span>Dragon</span> - CVA | K1rieshich
               </h1>
             </div>
@@ -116,12 +121,13 @@ const Sandbox = () => {
             </div>
             <div className={Style.players}>
               <h1>
-                <span className={Style.Cusrom}>Pidor</span> - CVA | Meepokin
+                <span className={Style.Cusrom}>Pidor</span> - CVA | HeBazar4iks
               </h1>
             </div>
             <div className={Style.players}>
               <h1>
-                <span className={Style.Cusrom_2}>Svintus</span> - CVA | .Батя твоя
+                <span className={Style.Cusrom_2}>Svintus</span> - CVA | .Батя
+                твоя
               </h1>
             </div>
           </div>
