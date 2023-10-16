@@ -4,6 +4,13 @@ import { useState, useEffect } from "react";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import AppsOutageIcon from "@mui/icons-material/AppsOutage";
+import HourglassBottomIcon from "@mui/icons-material/HourglassBottom";
+
+//Str
+import StarIcon from "@mui/icons-material/Star";
+import StarHalfIcon from "@mui/icons-material/StarHalf";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 const Sandbox = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -66,7 +73,7 @@ const Sandbox = () => {
                 toggleState === 4 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
               }
               onClick={() => ToggleTab(4)}>
-              <AdminPanelSettingsIcon />
+              <AppsOutageIcon />
               Заявки в Клан
             </div>
           </div>
@@ -135,19 +142,54 @@ const Sandbox = () => {
             className={`${Style.Content} ${
               toggleState === 2 ? Style.Active_Content : ""
             }`}>
-            <h1>Content 2</h1>
+            <div className={Style.players}>
+              <h1>
+                <StarIcon />
+                <span className={Style.LeaderLVL3}>Highest Leader</span> - CVA |
+                AndreyBolgov
+              </h1>
+            </div>
+            <div className={Style.players}>
+              <h1>
+                <StarHalfIcon />
+                <span className={Style.LeaderLVL2}>Middle Leader</span> - CVA |
+                xDeadForMilfa
+              </h1>
+            </div>
+            <div className={Style.players}>
+              <h1>
+                <StarBorderIcon />
+                <span className={Style.LeaderLVL1}>Lowest Leader</span> - CVA |
+                KaYd0
+              </h1>
+            </div>
           </div>
           <div
             className={`${Style.Content} ${
               toggleState === 3 ? Style.Active_Content : ""
             }`}>
-            <h1>Content 3</h1>
+            <div className={Style.players}>
+              <h1>
+                <span>Helper</span> - CVA | Hacer_v_rekah
+              </h1>
+            </div>
           </div>
           <div
             className={`${Style.Content} ${
               toggleState === 4 ? Style.Active_Content : ""
             }`}>
-            <h1>Content 4</h1>
+            <div className={Style.players}>
+              <h1>
+                <span>Bunny</span> - Zeaper123
+              </h1>
+              <div className={Style.Accept}>
+                <button>Принять</button>
+                <button>Отказ</button>
+                <p>
+                  <HourglassBottomIcon />В Ожидании
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

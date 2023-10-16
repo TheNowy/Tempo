@@ -75,18 +75,82 @@
       width: 60rem;
       margin-bottom: 10px;
       display: flex;
-      justify-content: start;
+      justify-content: space-between;
       align-items: center;
       padding: 14px;
       position: relative;
       background-color: #fff;
       border-radius: 20px;
       border: solid 1px #ececec;
+
+      //Wait
+      .Accept {
+        display: flex;
+        button {
+          margin-right: 10px;
+          width: 7rem;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          color: white;
+          border-radius: 4px;
+          background-color: #5865f2;
+          padding: 10px 20px;
+
+          &:hover {
+            color: rgb(216, 214, 214);
+            background-color: #4e58c5;
+          }
+        }
+        p {
+          font-size: 13px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          svg {
+            color: #7e50e1;
+            animation: rotate 4s linear infinite;
+            animation-delay: 1s;
+          }
+        }
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          75% {
+            transform: rotate(180deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+      //
+
       h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 100;
         font-size: 18px;
 
+        svg {
+          color: #7e50e1;
+        }
+
         span {
+          margin-right: 5px;
           background-color: #7e50e1;
           color: white;
           padding: 5px 10px;
@@ -97,7 +161,28 @@
           background: linear-gradient(to right, gold, rgb(232, 151, 0));
         }
         .Cusrom_2 {
-          background: linear-gradient(to right, rgb(0, 174, 255), rgb(0, 23, 232));
+          background: linear-gradient(
+            to right,
+            rgb(0, 174, 255),
+            rgb(0, 23, 232)
+          );
+        }
+        .LeaderLVL3 {
+          background: linear-gradient(to right, gold, orange);
+        }
+        .LeaderLVL2 {
+          background: linear-gradient(
+            to right,
+            rgb(63, 63, 63),
+            rgb(128, 128, 128)
+          );
+        }
+        .LeaderLVL1 {
+          background: linear-gradient(
+            to right,
+            rgb(154, 67, 0),
+            rgb(167, 0, 0)
+          );
         }
       }
     }
