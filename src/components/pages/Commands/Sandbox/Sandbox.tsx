@@ -1,5 +1,6 @@
 import Style from "./Sandbox.module.scss";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
@@ -183,10 +184,14 @@ const Sandbox = () => {
                 <span>Bunny</span> - Zeaper123
               </h1>
               <div className={Style.Accept}>
-                <button>Принять</button>
-                <button>Отказ</button>
+                <Link to="https://risovach.ru/upload/2014/09/mem/krestnyy-otec_60436386_orig_.jpeg">
+                  <button>Принять</button>
+                </Link>
+                <Link to="https://webpulse.imgsmail.ru/imgpreview?mb=webpulse&key=pulse_cabinet-image-8a2383ec-a793-4caa-81aa-09dd92ed8d51">
+                  <button>Отказ</button>
+                </Link>
                 <p>
-                  <HourglassBottomIcon />В Ожидании
+                  <HourglassBottomIcon />
                 </p>
               </div>
             </div>

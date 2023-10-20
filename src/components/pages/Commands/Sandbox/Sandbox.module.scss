@@ -97,7 +97,7 @@
           color: white;
           border-radius: 4px;
           background-color: #5865f2;
-          padding: 10px 20px;
+          padding: 7px 20px;
           font-size: 15px;
 
           &:hover {
@@ -114,8 +114,7 @@
 
           svg {
             color: #7e50e1;
-            animation: rotate 4s linear infinite;
-            animation-delay: 1s;
+            animation: rotate 2s linear infinite;
           }
         }
 
