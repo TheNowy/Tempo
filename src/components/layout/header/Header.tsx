@@ -2,6 +2,18 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Dropmenu from "./dropmenu/Dropmenu";
 import scss from "./Header.module.scss";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      staggerChildren: 0,
+    },
+  },
+};
 
 export const Header: React.FC = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
@@ -37,29 +49,41 @@ export const Header: React.FC = () => {
         }>
         <div className={scss.header_wrapper}>
           <NavLink to="/" className={scss.logo}>
-            <img src="../../../../logo.png" alt="" />
+            <motion.ul
+              className="container"
+              variants={container}
+              initial="hidden"
+              animate="visible">
+              <img src="../../../../logo.png" alt="" />
+            </motion.ul>
             {/* <h3 className={scss.logo_text}>Lucky</h3> */}
           </NavLink>
-          <div className={scss.links}>
-            <NavLink to="https://discord.gg/W8BHbJM7" className={scss.linksD}>
-              Дискорд Сервер
-            </NavLink>
-            <NavLink to="/Commands" className={scss.linksD}>
-              CVA Команда
-            </NavLink>
-            <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
-              Nowy
-            </NavLink>
-            <div
-              className={`${scss.burger} ${isOpen ? scss.open : ""}`}
-              onClick={() => {
-                setOpenProfile((prev) => !prev);
-                toggleMenu();
-              }}>
-              <span></span>
-              <span></span>
+          <motion.ul
+            className="container"
+            variants={container}
+            initial="hidden"
+            animate="visible">
+            <div className={scss.links}>
+              <NavLink to="https://discord.gg/W8BHbJM7" className={scss.linksD}>
+                Дискорд Сервер
+              </NavLink>
+              <NavLink to="/Commands" className={scss.linksD}>
+                CVA Команда
+              </NavLink>
+              <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
+                Nowy
+              </NavLink>
+              <div
+                className={`${scss.burger} ${isOpen ? scss.open : ""}`}
+                onClick={() => {
+                  setOpenProfile((prev) => !prev);
+                  toggleMenu();
+                }}>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-          </div>
+          </motion.ul>
         </div>
       </div>
       {openProfile && <Dropmenu />}
