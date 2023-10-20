@@ -1,6 +1,6 @@
 import Style from "./Sandbox.module.scss";
 import { useState, useEffect } from "react";
-
+import { Container } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
@@ -144,6 +144,13 @@ const Sandbox = () => {
             className={`${Style.Content} ${
               toggleState === 2 ? Style.Active_Content : ""
             }`}>
+            <div className={Style.players}>
+              <h1>
+                <StarIcon className={Style.hight} />
+                <span className={Style.LeaderLVL4}>The Highest Leader</span> -
+                CVA | HeBazar4iks
+              </h1>
+            </div>
             <div className={Style.players}>
               <h1>
                 <StarIcon />

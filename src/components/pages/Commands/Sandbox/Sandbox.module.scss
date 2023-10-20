@@ -67,6 +67,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
+    transition: 1s;
 
     display: none;
 
@@ -147,6 +148,9 @@
         svg {
           color: #7e50e1;
         }
+        .hight {
+          color: gold;
+        }
 
         span {
           margin-right: 5px;
@@ -165,6 +169,14 @@
             rgb(0, 174, 255),
             rgb(0, 23, 232)
           );
+        }
+        .LeaderLVL4 {
+          background: linear-gradient(
+            to right,
+            rgb(145, 0, 135),
+            rgb(75, 0, 122)
+          );
+          background: linear-gradient(to right, rgb(76, 0, 76), rgb(175, 0, 0));
         }
         .LeaderLVL3 {
           background: linear-gradient(to right, gold, orange);
