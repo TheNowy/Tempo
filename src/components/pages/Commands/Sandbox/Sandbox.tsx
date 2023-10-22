@@ -16,6 +16,7 @@ import StarBorderIcon from "@mui/icons-material/StarBorder";
 const Sandbox = () => {
   const [toggleState, setToggleState] = useState(1);
   const [headerScroll, setHeaderScroll] = useState(false);
+  const [isActiveDis, setIsActiveDis] = useState(false);
 
   useEffect(() => {
     const changeBackground = () => {
@@ -33,6 +34,10 @@ const Sandbox = () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
+
+  const toggleDescription = () => {
+    setIsActiveDis(!isActiveDis);
+  };
 
   const ToggleTab = (index: number) => {
     setToggleState(index);
@@ -82,10 +87,32 @@ const Sandbox = () => {
             className={`${Style.Content} ${
               toggleState === 1 ? Style.Active_Content : ""
             }`}>
-            <div className={Style.players}>
-              <h1>
-                <span>Bunny</span> - CVA | xDeadForMilfa
-              </h1>
+            <div
+              className={isActiveDis ? Style.players : Style.player_active}
+              onClick={toggleDescription}>
+              {isActiveDis ? (
+                <div className={Style.Discaption}>
+                  <h1>
+                    <span>/accept</span> - Принять
+                  </h1>
+                  <h3>V</h3>
+                </div>
+              ) : (
+                <div className={Style.Discaption_Active}>
+                  <h1>
+                    <span>/accept</span> - Принять
+                  </h1>
+                  <h3>V</h3>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure molestias exercitationem harum recusandae id nulla
+                    ullam error mollitia nam ea praesentium provident minus
+                    facilis, quam veritatis dignissimos distinctio veniam
+                    corrupti.
+                  </p>
+                </div>
+              )}
             </div>
             <div className={Style.players}>
               <h1>
