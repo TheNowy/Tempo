@@ -1,18 +1,33 @@
 import scss from "./Home.module.scss";
-// import MainTitle from "./MainTitle/MainTitle";
+import MainTitle from "./MainTitle/MainTitle";
+import { motion } from "framer-motion";
 // import { Tilt } from "react-tilt";
+
+const container = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      staggerChildren: 0,
+    },
+  },
+};
 
 const Home = () => {
   return (
     <>
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
-          <div className={scss.home_content}>
-            <div className={scss.main_page}>
-              {/* <MainTitle /> */}
-              <h1>Soon...</h1>
+          <motion.ul
+            className="container"
+            variants={container}
+            initial="hidden"
+            animate="visible">
+            <div className={scss.home_content}>
+              <MainTitle />
             </div>
-          </div>
+          </motion.ul>
         </div>
       </div>
     </>

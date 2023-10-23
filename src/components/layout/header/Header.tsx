@@ -64,14 +64,14 @@ export const Header: React.FC = () => {
             initial="hidden"
             animate="visible">
             <div className={scss.links}>
-              <NavLink to="https://discord.gg/W8BHbJM7" className={scss.linksD}>
+              <NavLink to="https://discord" className={scss.linksD}>
                 Дискорд Сервер
               </NavLink>
               <NavLink to="/Commands" className={scss.linksD}>
-                CVA Команда
+                Команды
               </NavLink>
               <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
-                Nowy
+                Nowy Bio
               </NavLink>
               <div
                 className={`${scss.burger} ${isOpen ? scss.open : ""}`}

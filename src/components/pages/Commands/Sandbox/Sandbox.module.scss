@@ -203,8 +203,21 @@
         justify-content: space-between;
         padding: 0;
 
-        h3 {
-          transition: 0s;
+        h1,
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            color: black;
+            transition: 0.3s;
+            position: relative;
+            left: 47rem;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
         }
       }
     }
@@ -215,24 +228,25 @@
       .Discaption_Active {
         padding: 0;
         display: flex;
-        flex-direction: column;
         gap: 100px;
+        flex-direction: column;
 
-        h3 {
-          transition: 0s;
-          position: absolute;
+        svg {
+          color: black;
+          transition: 0.3s;
+          position: relative;
+          left: 47rem;
+          padding: 10px;
           display: flex;
-          justify-content: start;
-          align-items: end;
-          width: 97.3%;
-          transform: rotate(180deg);
+          justify-content: center;
+          align-items: center;
+          transform: rotate(90deg);
         }
 
         h1 {
           display: flex;
           justify-content: start;
         }
-
         p {
           display: flex;
           text-align: start;

@@ -52,7 +52,7 @@
         font-family: "Kanit", sans-serif;
         font-family: "Rubik", sans-serif;
         padding: 10px;
-        width: 8rem;
+        width: 5rem;
         color: rgb(0, 0, 0);
         font-size: 20px;
         position: relative;
@@ -68,13 +68,13 @@
           top: 90%;
           transform: translateY(-50%);
           transition: width 0.3s ease;
-          left: 100%;
-          right: 0;
-          opacity: 0;
+          left: 0;
+          right: 100%;
+          opacity: 1;
         }
 
         &:hover:nth-child(2):before {
-          width: 150px;
+          width: 100px;
           left: 0;
           opacity: 1;
           right: 0;
@@ -85,7 +85,9 @@
           left: 0;
         }
         &:hover:nth-child(3):before {
-          opacity: 0;
+          width: 115px;
+          opacity: 1;
+          left: 0;
         }
 
         &:hover {
@@ -102,7 +104,7 @@
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: rgba(0, 0, 0, 0);
-          width: 4rem;
+          width: 6rem;
         }
       }
     }

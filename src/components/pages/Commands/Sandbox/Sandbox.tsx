@@ -6,6 +6,7 @@ import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import AppsOutageIcon from "@mui/icons-material/AppsOutage";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import HourglassBottomIcon from "@mui/icons-material/HourglassBottom";
 
 //Str
@@ -94,23 +95,23 @@ const Sandbox = () => {
                 <div className={Style.Discaption}>
                   <h1>
                     <span>/accept</span> - Принять
+                    <ArrowForwardIosIcon />
                   </h1>
-                  <h3>V</h3>
                 </div>
               ) : (
                 <div className={Style.Discaption_Active}>
                   <h1>
                     <span>/accept</span> - Принять
+                    <ArrowForwardIosIcon />
                   </h1>
-                  <h3>V</h3>
 
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure molestias exercitationem harum recusandae id nulla
-                    ullam error mollitia nam ea praesentium provident minus
-                    facilis, quam veritatis dignissimos distinctio veniam
-                    corrupti.
-                  </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iure molestias exercitationem harum recusandae id nulla
+                      ullam error mollitia nam ea praesentium provident minus
+                      facilis, quam veritatis dignissimos distinctio veniam
+                      corrupti.
+                    </p>
                 </div>
               )}
             </div>
