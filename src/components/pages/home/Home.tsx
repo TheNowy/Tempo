@@ -1,5 +1,6 @@
 import scss from "./Home.module.scss";
 import MainTitle from "./MainTitle/MainTitle";
+import Gridbox from "./GridBox/Gridbox";
 import { motion } from "framer-motion";
 // import { Tilt } from "react-tilt";
 
@@ -26,6 +27,7 @@ const Home = () => {
             animate="visible">
             <div className={scss.home_content}>
               <MainTitle />
+              <Gridbox />
             </div>
           </motion.ul>
         </div>

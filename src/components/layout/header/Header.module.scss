@@ -30,14 +30,14 @@
     justify-content: start;
 
     padding: 1px;
-
     .logo {
       width: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0;
       img {
-        width: 50px;
+        width: 60px;
       }
     }
     .links {

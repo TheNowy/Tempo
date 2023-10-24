@@ -58,14 +58,14 @@ const Sandbox = () => {
               }
               onClick={() => ToggleTab(1)}>
               <FormatListBulletedIcon />
-              Игроки
+              Команды
             </div>
             <div
               className={
                 toggleState === 2 ? Style.Drop_Uvs_Box : Style.Drop_Vs_Box
               }
               onClick={() => ToggleTab(2)}>
-              <SupervisorAccountIcon /> Главы
+              <SupervisorAccountIcon /> Создатели
             </div>
             <div
               className={
@@ -81,7 +81,7 @@ const Sandbox = () => {
               }
               onClick={() => ToggleTab(4)}>
               <AppsOutageIcon />
-              Заявки в Клан
+              Идеи
             </div>
           </div>
           <div
@@ -92,33 +92,55 @@ const Sandbox = () => {
               className={isActiveDis ? Style.players : Style.player_active}
               onClick={toggleDescription}>
               {isActiveDis ? (
-                <div className={Style.Discaption}>
-                  <h1>
-                    <span>/accept</span> - Принять
-                    <ArrowForwardIosIcon />
-                  </h1>
-                </div>
-              ) : (
                 <div className={Style.Discaption_Active}>
                   <h1>
-                    <span>/accept</span> - Принять
+                    <span>/accept</span> - Принять идею.
                     <ArrowForwardIosIcon />
                   </h1>
 
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Iure molestias exercitationem harum recusandae id nulla
-                      ullam error mollitia nam ea praesentium provident minus
-                      facilis, quam veritatis dignissimos distinctio veniam
-                      corrupti.
-                    </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure molestias exercitationem harum recusandae id nulla
+                    ullam error mollitia nam ea praesentium provident minus
+                    facilis, quam veritatis dignissimos distinctio veniam
+                    corrupti.
+                  </p>
+                </div>
+              ) : (
+                <div className={Style.Discaption}>
+                  <h1>
+                    <span>/accept</span> - Принять идею.
+                    <ArrowForwardIosIcon />
+                  </h1>
                 </div>
               )}
             </div>
-            <div className={Style.players}>
-              <h1>
-                <span>Dragon</span> - CVA | tufleva
-              </h1>
+            <div
+              className={isActiveDis ? Style.players : Style.player_active}
+              onClick={toggleDescription}>
+              {isActiveDis ? (
+                <div className={Style.Discaption_Active}>
+                  <h1>
+                    <span>/accept</span> - Принять идею.
+                    <ArrowForwardIosIcon />
+                  </h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure molestias exercitationem harum recusandae id nulla
+                    ullam error mollitia nam ea praesentium provident minus
+                    facilis, quam veritatis dignissimos distinctio veniam
+                    corrupti.
+                  </p>
+                </div>
+              ) : (
+                <div className={Style.Discaption}>
+                  <h1>
+                    <span>/accept</span> - Принять идею.
+                    <ArrowForwardIosIcon />
+                  </h1>
+                </div>
+              )}
             </div>
             <div className={Style.players}>
               <h1>
@@ -175,7 +197,7 @@ const Sandbox = () => {
               <h1>
                 <StarIcon className={Style.hight} />
                 <span className={Style.LeaderLVL4}>The Highest Leader</span> -
-                CVA | HeBazar4iks
+                Nowy
               </h1>
             </div>
             <div className={Style.players}>
@@ -189,7 +211,7 @@ const Sandbox = () => {
               <h1>
                 <StarHalfIcon />
                 <span className={Style.LeaderLVL2}>Middle Leader</span> - CVA |
-                xDeadForMilfa
+                GrishaNeyar
               </h1>
             </div>
             <div className={Style.players}>
@@ -206,7 +228,12 @@ const Sandbox = () => {
             }`}>
             <div className={Style.players}>
               <h1>
-                <span>Helper</span> - CVA | Hacer_v_rekah
+                <span>Devoloper</span> - Nowy
+              </h1>
+            </div>
+            <div className={Style.players}>
+              <h1>
+                <span>Moderator</span> - GrishaNeyar
               </h1>
             </div>
           </div>
@@ -216,7 +243,8 @@ const Sandbox = () => {
             }`}>
             <div className={Style.players}>
               <h1>
-                <span>Bunny</span> - Zeaper123
+                <span>Zeaper123</span> - Добавить команду которая будет
+                перекидовать в Войс
               </h1>
               <div className={Style.Accept}>
                 <Link to="https://risovach.ru/upload/2014/09/mem/krestnyy-otec_60436386_orig_.jpeg">

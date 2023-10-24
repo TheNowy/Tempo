@@ -4,7 +4,6 @@ import Sandbox from "./Sandbox/Sandbox";
 import { motion } from "framer-motion";
 // import { Container } from "@mui/material";
 
-
 const container = {
   hidden: { opacity: 0, scale: 0.9 },
   visible: {
@@ -28,9 +27,7 @@ const Commands = () => {
           <div className={Style.container}>
             <div className={Style.Home_Content}>
               <div className={Style.main_title}>
-                <h3>
-                  cva к<span>оманда</span>
-                </h3>
+                <h3>Команды</h3>
               </div>
               <div className={Style.mini_title}>
                 <p>Всего: 25 игроков</p>
