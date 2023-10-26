@@ -65,7 +65,7 @@ export const Header: React.FC = () => {
             animate="visible">
             <div className={scss.links}>
               <NavLink to="https://discord" className={scss.linksD}>
-                Дискорд Сервер
+                Сервер поддержки
               </NavLink>
               <NavLink to="/Commands" className={scss.linksD}>
                 Команды

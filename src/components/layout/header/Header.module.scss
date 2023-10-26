@@ -52,7 +52,6 @@
         font-family: "Kanit", sans-serif;
         font-family: "Rubik", sans-serif;
         padding: 10px;
-        width: 5rem;
         color: rgb(0, 0, 0);
         font-size: 20px;
         position: relative;
@@ -74,18 +73,18 @@
         }
 
         &:hover:nth-child(2):before {
-          width: 100px;
+          width: 106px;
           left: 0;
           opacity: 1;
           right: 0;
         }
         &:hover:nth-child(1):before {
-          width: 180px;
+          width: 205px;
           opacity: 1;
           left: 0;
         }
         &:hover:nth-child(3):before {
-          width: 115px;
+          width: 106px;
           opacity: 1;
           left: 0;
         }
@@ -94,17 +93,12 @@
           color: #5865f2;
         }
 
-        &:first-child {
-          width: 10rem;
-        }
-
         &:nth-child(3) {
           background: -webkit-linear-gradient(-70deg, #9000ff 0%, #ff00c3 100%);
           background-clip: border-box;
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: rgba(0, 0, 0, 0);
-          width: 6rem;
         }
       }
     }
