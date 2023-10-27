@@ -7,7 +7,7 @@ const Aboutbot = () => {
         <div className={Style.Info}>
           <h1>Скоро...</h1>
         </div>
-        <img src="../../../../../public/Rimuru-PNG-Clipart.png" alt="" />
+        <img src="../../../../../Rimuru-PNG-Clipart.png" alt="" />
       </div>
     </>
   );
