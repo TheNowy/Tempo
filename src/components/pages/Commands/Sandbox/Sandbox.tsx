@@ -247,10 +247,10 @@ const Sandbox = () => {
                 перекидовать в Войс
               </h1>
               <div className={Style.Accept}>
-                <Link to="https://risovach.ru/upload/2014/09/mem/krestnyy-otec_60436386_orig_.jpeg">
+                <Link to="/">
                   <button>Принять</button>
                 </Link>
-                <Link to="https://webpulse.imgsmail.ru/imgpreview?mb=webpulse&key=pulse_cabinet-image-8a2383ec-a793-4caa-81aa-09dd92ed8d51">
+                <Link to="/">
                   <button>Отказ</button>
                 </Link>
                 <p>
