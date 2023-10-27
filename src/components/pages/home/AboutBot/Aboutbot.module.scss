@@ -1,0 +1,27 @@
+.About_wrapper {
+  margin-top: 70px;
+
+  width: 100%;
+  min-height: 300px;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: solid 1px #ececec;
+  border-radius: 40px;
+  background: #fbfbfb;
+
+  img {
+    width: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Info {
+    h1 {
+      width: 20rem;
+      font-size: 70px;
+    }
+  }
+}
