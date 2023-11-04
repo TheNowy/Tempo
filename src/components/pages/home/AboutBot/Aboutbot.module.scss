@@ -20,7 +20,10 @@
   }
   .Info {
     h1 {
-      width: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50rem;
       font-size: 70px;
     }
   }

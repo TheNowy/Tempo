@@ -199,14 +199,30 @@
       .Discaption_Active {
         padding: 0;
         display: flex;
-        gap: 100px;
+        gap: 20px;
         flex-direction: column;
+        cursor: pointer;
+
+        h3 {
+          font-size: 17px;
+          font-weight: 600;
+        }
+        h4 {
+          font-size: 17px;
+          font-weight: 500;
+          span {
+            font-weight: 500;
+            background-color: #eee;
+            padding: 8px;
+            border-radius: 8px;
+            line-height: 1.4rem;
+          }
+        }
 
         svg {
           color: black;
           transition: 0.3s;
           position: relative;
-          left: 44rem;
           padding: 10px;
           display: flex;
           justify-content: center;
@@ -234,6 +250,7 @@
         width: 100%;
         justify-content: space-between;
         padding: 0;
+        cursor: pointer;
 
         h1 {
           span {
@@ -245,7 +262,6 @@
             color: black;
             transition: 0.3s;
             position: relative;
-            left: 44rem;
             padding: 10px;
             display: flex;
             justify-content: center;

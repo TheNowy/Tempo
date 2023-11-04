@@ -94,22 +94,26 @@ const Sandbox = () => {
               {isActiveDis ? (
                 <div className={Style.Discaption_Active}>
                   <h1>
-                    <span>/accept</span> - Принять идею.
+                    <span>accept</span> - Принять идею.
                     <ArrowForwardIosIcon />
                   </h1>
-
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure molestias exercitationem harum recusandae id nulla
-                    ullam error mollitia nam ea praesentium provident minus
-                    facilis, quam veritatis dignissimos distinctio veniam
-                    corrupti.
-                  </p>
+                  <h3>Использование</h3>
+                  <h4>
+                    <span>accept &lt;id идеи&gt; [вердикт]</span>
+                  </h4>
+                  <h3>Примеры</h3>
+                  <h4>
+                    <span>accept 34 Отличная идея!</span> - Принять идею с id 34
+                    с вердиктом "Отличная идея!"
+                  </h4>
+                  <h4>
+                    <span>accept 34</span> - Принять идею с id 34
+                  </h4>
                 </div>
               ) : (
                 <div className={Style.Discaption}>
                   <h1>
-                    <span>/accept</span> - Принять идею.
+                    <span>accept</span> - Принять идею.
                     <ArrowForwardIosIcon />
                   </h1>
                 </div>
@@ -121,72 +125,81 @@ const Sandbox = () => {
               {isActiveDis ? (
                 <div className={Style.Discaption_Active}>
                   <h1>
-                    <span>/accept</span> - Принять идею.
+                    <span>deny</span> - Отклонить идею.
                     <ArrowForwardIosIcon />
                   </h1>
-
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure molestias exercitationem harum recusandae id nulla
-                    ullam error mollitia nam ea praesentium provident minus
-                    facilis, quam veritatis dignissimos distinctio veniam
-                    corrupti.
-                  </p>
+                  <h3>Использование</h3>
+                  <h4>
+                    <span>deny &lt;id идеи&gt; [вердикт]</span>
+                  </h4>
+                  <h3>Примеры</h3>
+                  <h4>
+                    <span>deny 34 Не будет реализовано!</span> - Отклонить идею
+                    с id 34 с вердиктом "Не будет реализовано"
+                  </h4>
+                  <h4>
+                    <span>deny 34</span> - Отклонить идею с id 34
+                  </h4>
                 </div>
               ) : (
                 <div className={Style.Discaption}>
                   <h1>
-                    <span>/accept</span> - Принять идею.
+                    <span>deny</span> - Отклонить идею.
                     <ArrowForwardIosIcon />
                   </h1>
                 </div>
               )}
             </div>
-            <div className={Style.players}>
-              <h1>
-                <span>Bunny</span> - CVA | KaYd0
-              </h1>
+            <div
+              className={isActiveDis ? Style.players : Style.player_active}
+              onClick={toggleDescription}>
+              {isActiveDis ? (
+                <div className={Style.Discaption_Active}>
+                  <h1>
+                    <span>edit</span> - Отредактировать сообщение бота,
+                    отправленное через команду say.
+                    <ArrowForwardIosIcon />
+                  </h1>
+                  <h3>Использование</h3>
+                  <h4>
+                    <span>edit &lt;ID сообщения&gt; &lt;content/JSON&gt;</span>
+                  </h4>
+                  <h3>Примеры</h3>
+                  <h4>
+                    edit 917769114158780416 сообщение - Отредактирует сообщение
+                    с идентификатором <br />
+                    917769114158780416
+                  </h4>
+                </div>
+              ) : (
+                <div className={Style.Discaption}>
+                  <h1>
+                    <span>edit</span> - Отредактировать сообщение бота,
+                    <ArrowForwardIosIcon />
+                  </h1>
+                </div>
+              )}
             </div>
-            <div className={Style.players}>
-              <h1>
-                <span>Bunny</span> - CVA | SlivRW
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span>Dragon</span> - CVA | K1rieshich
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span>Imperator</span> - CVA | Nowy
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span className={Style.Cusrom}>Gay</span> - CVA | chelovek5614
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span className={Style.Cusrom}>Frik</span> - CVA | Lacksy
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span className={Style.Cusrom}>Pidor</span> - CVA | HeBazar4iks
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span className={Style.Cusrom_2}>Svintus</span> - CVA | .Батя
-                твоя
-              </h1>
-            </div>
-            <div className={Style.players}>
-              <h1>
-                <span className={Style.Cusrom_2}>GovnoCoder</span> - CVA | M4RS1
-              </h1>
+            <div
+              className={isActiveDis ? Style.players : Style.player_active}
+              onClick={toggleDescription}>
+              {isActiveDis ? (
+                <div className={Style.Discaption_Active}>
+                  <h1>
+                    <span>giveaway</span> - Управление розыгрышами.
+                    <ArrowForwardIosIcon />
+                  </h1>
+                  <h3>Использование</h3>
+                  <h4>giveaway</h4>
+                </div>
+              ) : (
+                <div className={Style.Discaption}>
+                  <h1>
+                    <span>giveaway</span> - Управление розыгрышами.
+                    <ArrowForwardIosIcon />
+                  </h1>
+                </div>
+              )}
             </div>
           </div>
           <div
