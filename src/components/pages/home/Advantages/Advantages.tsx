@@ -7,9 +7,9 @@ const Advantages = () => {
         <h1>Готовы начать свое приключение?</h1>
         <div className={Style.Btn_Wrapper}>
           <button className={`${Style.Discord_Add} ${Style.App_But}`}>
-            Добавить в Discord
+            Стать водителем
           </button>
-          <button className={Style.App_But}>Сервер поддержки</button>
+          <button className={Style.App_But}>Как начать</button>
         </div>
       </div>
     </>

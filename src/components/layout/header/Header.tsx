@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Dropmenu from "./dropmenu/Dropmenu";
-import scss from "./Header.module.scss";
-import { motion } from "framer-motion";
+import Style from "./Header.module.scss";
+import { AnimatePresence, motion } from "framer-motion";
 
 const container = {
   hidden: { opacity: 1, scale: 0.9 },
@@ -14,6 +14,33 @@ const container = {
     },
   },
 };
+
+// const dropmenuAnimation = {
+//   open: {
+//     opacity: 1,
+//     scale: 1,
+//     y: 25,
+//     transition: {
+//       opacity: { duration: 0.5 },
+//     },
+//   },
+//   closed: {
+//     opacity: 0,
+//     scale: 1,
+//     y: -20,
+//     transition: {
+//       opacity: { duration: 1 },
+//     },
+//   },
+//   exit: {
+//     opacity: 0,
+//     scale: 1,
+//     y: -20,
+//     transition: {
+//       opacity: { duration: 1 },
+//     },
+//   },
+// };
 
 export const Header: React.FC = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
@@ -45,36 +72,26 @@ export const Header: React.FC = () => {
     <nav>
       <div
         className={
-          headerScroll ? `${scss.header} ${scss.active}` : `${scss.header}`
+          headerScroll ? `${Style.header} ${Style.active}` : `${Style.header}`
         }>
-        <div className={scss.header_wrapper}>
-          <NavLink to="/" className={scss.logo}>
-            <motion.ul
-              className="container"
-              variants={container}
-              initial="hidden"
-              animate="visible">
-              <img src="../../../../logo.png" alt="" />
-            </motion.ul>
-            {/* <h3 className={scss.logo_text}>Lucky</h3> */}
-          </NavLink>
+        <div className={Style.header_wrapper}>
           <motion.ul
             className="container"
             variants={container}
             initial="hidden"
             animate="visible">
-            <div className={scss.links}>
-              <NavLink to="/" className={scss.linksD}>
+            <NavLink to="/" className={Style.logo}>
+              <img src="../../../../logo.png" alt="" />
+            </NavLink>
+            <div className={Style.links}>
+              <NavLink to="/" className={Style.linksD}>
                 Стать водителем
               </NavLink>
-              <NavLink to="/" className={scss.linksD}>
+              <NavLink to="/" className={Style.linksD}>
                 Как начать
               </NavLink>
-              {/* <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
-                Nowy Bio
-              </NavLink> */}
               <div
-                className={`${scss.burger} ${isOpen ? scss.open : ""}`}
+                className={`${Style.burger} ${isOpen ? Style.open : ""}`}
                 onClick={() => {
                   setOpenProfile((prev) => !prev);
                   toggleMenu();
@@ -86,7 +103,24 @@ export const Header: React.FC = () => {
           </motion.ul>
         </div>
       </div>
-      {openProfile && <Dropmenu />}
+      <AnimatePresence>
+        {openProfile && (
+          // <motion.div
+          //   key="dropmenu"
+          //   className={Style.dropmenu}
+          //   initial="closed"
+          //   animate={openProfile ? "open" : "closed"}
+          //   exit="exit"
+          //   variants={dropmenuAnimation}
+          //   onAnimationComplete={() => {
+          //     if (!openProfile) {
+          //       setOpenProfile(false);
+          //     }
+          //   }}>
+          <Dropmenu />
+          // </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

@@ -1,26 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import scss from "./Dropmenu.module.scss";
+import Style from "./Dropmenu.module.scss";
 
 const Dropmenu: React.FC = () => {
-  const activeLink = ({ isActive }: { isActive: boolean }) => {
-    return {
-      background: isActive ? "#ffffffa0" : "rgb(49, 49, 49)",
-      color: isActive ? "black" : "white",
-    };
-  };
-
   return (
-    <div className={scss.wrapper_adpt}>
-      <div className={scss.wrapper_adpt_hlp}>
-        <div className={scss.wrapper}>
-          <div className={scss.wrapper_box}>
-            <NavLink to="/" className={scss.link} style={activeLink}>
-              Главная
+    <div className={Style.wrapper_adpt}>
+      <div className={Style.wrapper_adpt_hlp}>
+        <div className={Style.wrapper}>
+          <div className={Style.wrapper_box}>
+            <NavLink to="/Catalog" className={Style.link}>
+              Стать водителем
             </NavLink>
-            <hr />
-            <NavLink to="/Catalog" className={scss.link} style={activeLink}>
-              Каталог
+            <NavLink to="/Catalog" className={Style.link}>
+              Как начать
             </NavLink>
           </div>
         </div>
