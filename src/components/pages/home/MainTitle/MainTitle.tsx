@@ -6,19 +6,18 @@ const MainTitle = () => {
       <div className={Style.Title_Wrapper}>
         <div className={Style.main_title}>
           <h1>
-            Мощный <span>инструмент</span> для вашего сервера
+            Стань <span>водителем</span> прямо сейчас и начни{" "}
+            <span>зарабатывать !</span>
           </h1>
           <p>
-            <span>Tempo</span> — многофункциональный бот, предназначенный для улучшения и
-            защиты вашего сервера Discord.
+            <span>MangoKG</span> — волшебный мир свободы и заработка! Стань
+            таксистом сегодня и ощути ветер перемен вместе с нами!.
           </p>
           <div className={Style.Btn_Wrapper}>
             <button className={`${Style.Discord_Add} ${Style.App_But}`}>
-              Добавить в Discord
+              Стать водителем
             </button>
-            <button className={Style.App_But}>
-              Подробнее
-            </button>
+            <button className={Style.App_But}>Подробнее</button>
           </div>
         </div>
       </div>

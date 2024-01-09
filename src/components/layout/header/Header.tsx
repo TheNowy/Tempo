@@ -64,15 +64,15 @@ export const Header: React.FC = () => {
             initial="hidden"
             animate="visible">
             <div className={scss.links}>
-              <NavLink to="https://discord" className={scss.linksD}>
-                Сервер поддержки
+              <NavLink to="/" className={scss.linksD}>
+                Стать водителем
               </NavLink>
-              <NavLink to="/Commands" className={scss.linksD}>
-                Команды
+              <NavLink to="/" className={scss.linksD}>
+                Как начать
               </NavLink>
-              <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
+              {/* <NavLink to="https://nowy.netlify.app" className={scss.linksD}>
                 Nowy Bio
-              </NavLink>
+              </NavLink> */}
               <div
                 className={`${scss.burger} ${isOpen ? scss.open : ""}`}
                 onClick={() => {
