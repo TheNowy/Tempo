@@ -7,7 +7,7 @@ const MainTitle = () => {
         <div className={Style.main_title}>
           <h1>
             Стань <span>водителем</span> прямо сейчас и начни{" "}
-            <span>зарабатывать !</span>
+            <span>зарабатывать</span>
           </h1>
           <p>
             <span>MangoKG</span> — волшебный мир свободы и заработка! Стань

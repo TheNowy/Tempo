@@ -55,3 +55,28 @@
     }
   }
 }
+
+@media (max-width: 661px) {
+  .ready_box {
+    h1 {
+      font-size: 2.4rem;
+    }
+    .Btn_Wrapper {
+      width: 90%;
+
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+
+      gap: 24px;
+
+      .App_But {
+        width: 100%;
+      }
+      .Discord_Add {
+        width: 100%;
+      }
+    }
+  }
+}

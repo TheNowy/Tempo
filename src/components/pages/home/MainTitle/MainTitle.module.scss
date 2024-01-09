@@ -69,3 +69,32 @@
     }
   }
 }
+@media (max-width: 1091px) {
+  .main_title {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media (max-width: 661px) {
+  .main_title {
+    .Btn_Wrapper {
+      width: 100%;
+
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+
+      gap: 24px;
+
+      .App_But {
+        width: 100%;
+      }
+      .Discord_Add {
+        width: 100%;
+      }
+    }
+  }
+}

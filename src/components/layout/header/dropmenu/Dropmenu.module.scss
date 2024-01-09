@@ -1,8 +1,9 @@
 .wrapper_adpt {
   position: fixed;
   background-color: #f3f3f3;
+  box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 100vh;
+  padding: 20vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,19 +34,120 @@
         flex-direction: column;
 
         .link {
+          line-height: 50px;
           padding: 0 1rem;
           background-color: #f3f3f3;
           display: flex;
           justify-content: start;
           align-items: center;
           width: 100%;
-          color: rgb(0, 0, 0);
+          color: #001a34;
           text-decoration: none;
           border-radius: 5px;
-          font-size: 17px;
+          font-size: 20px;
+          font-weight: 600;
+
+          svg {
+            margin-right: 5px;
+          }
 
           &:hover {
-            background-color: #c9c9c9;
+            background-color: #e0e0fe;
+          }
+        }
+
+        .Lang {
+          width: 100%;
+          overflow: hidden;
+        }
+        .Lang_active {
+          width: 100%;
+        }
+        .Discaption_Active {
+          padding: 5px;
+          padding-bottom: 2rem;
+          cursor: pointer;
+          border-radius: 8px;
+          margin-top: 3rem;
+          position: relative;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          background-color: #eff3f6;
+          border: 1px solid rgb(221, 221, 221);
+          flex-direction: column;
+          color: #001a34;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: none;
+          text-decoration: none;
+
+          hr {
+            margin-top: 10px;
+            width: 100%;
+            height: 4px;
+            border-radius: 40px;
+            background-color: #001a34;
+          }
+          .Lang_Choose {
+            padding-left: 10px;
+            width: 100%;
+            color: #001a34;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: none;
+            text-decoration: none;
+            border-radius: 12px;
+
+            span {
+              padding: 0 10px;
+              color: #585858;
+            }
+
+            &:hover {
+              background-color: #e0e0fe;
+            }
+
+            img {
+              width: 20px;
+              margin-right: 8px;
+            }
+          }
+        }
+        .Discaption {
+          margin-top: 3rem;
+          padding: 4px;
+          width: 100%;
+          cursor: pointer;
+          color: #001a34;
+          font-size: 18px;
+          font-weight: 500;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          background-color: #eff3f6;
+          border-radius: 8px;
+          border: 1px solid rgb(221, 221, 221);
+
+          svg:first-child {
+            color: #001a34;
+            font-size: 20px;
+            font-weight: 500;
+          }
+          svg:last-child {
+            color: #001a34;
+            font-size: 35px;
+            font-weight: 500;
+          }
+
+          img {
+            width: 20px;
+            margin: 8px;
+          }
+
+          span {
+            padding: 0 10px;
+            color: #585858;
           }
         }
       }
