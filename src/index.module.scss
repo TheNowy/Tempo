@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Kanit:600,600italic,700,700italic,800,800italic,900,900italic);
 
 * {
-  font-family: "Kanit", sans-serif;
   font-family: "Rubik", sans-serif;
+
   margin: 0;
   padding: 0;
   transition: 0.5s;
@@ -32,4 +32,10 @@
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-3);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
 }

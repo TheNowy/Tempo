@@ -1,8 +1,9 @@
 import scss from "./Home.module.scss";
 import MainTitle from "./MainTitle/MainTitle";
-import Gridbox from "./GridBox/Gridbox";
+// import Gridbox from "./GridBox/Gridbox";
 import Advantages from "./Advantages/Advantages";
 import Aboutbot from "./AboutBot/Aboutbot";
+import WayGridBox from "./WayGridBox/WayGridBox";
 import { motion } from "framer-motion";
 // import { Tilt } from "react-tilt";
 
@@ -29,7 +30,8 @@ const Home = () => {
             animate="visible">
             <div className={scss.home_content}>
               <MainTitle />
-              <Gridbox />
+              <WayGridBox />
+              {/* <Gridbox /> */}
               <Aboutbot />
               <Advantages />
             </div>

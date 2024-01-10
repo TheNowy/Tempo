@@ -19,14 +19,6 @@ const Dropmenu: React.FC = () => {
       <div className={Style.wrapper_adpt_hlp}>
         <div className={Style.wrapper}>
           <div className={Style.wrapper_box}>
-            <NavLink to="/Catalog" className={Style.link}>
-              <LocalTaxiIcon />
-              Стать водителем
-            </NavLink>
-            <NavLink to="/Catalog" className={Style.link}>
-              <HelpCenterIcon />
-              Как начать
-            </NavLink>
             <div
               className={isActiveDis ? Style.Lang_active : Style.Lang}
               onClick={toggleDescription}>
@@ -67,6 +59,14 @@ const Dropmenu: React.FC = () => {
                 </div>
               )}
             </div>
+            <NavLink to="/Catalog" className={Style.link}>
+              <LocalTaxiIcon />
+              Стать водителем
+            </NavLink>
+            <NavLink to="/Catalog" className={Style.link}>
+              <HelpCenterIcon />
+              Как начать
+            </NavLink>
           </div>
         </div>
       </div>
