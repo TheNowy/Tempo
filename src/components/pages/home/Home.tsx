@@ -1,6 +1,6 @@
 import scss from "./Home.module.scss";
 import MainTitle from "./MainTitle/MainTitle";
-// import Gridbox from "./GridBox/Gridbox";
+import Gridbox from "./GridBox/Gridbox";
 import Advantages from "./Advantages/Advantages";
 import Aboutbot from "./AboutBot/Aboutbot";
 import WayGridBox from "./WayGridBox/WayGridBox";
@@ -31,7 +31,7 @@ const Home = () => {
             <div className={scss.home_content}>
               <MainTitle />
               <WayGridBox />
-              {/* <Gridbox /> */}
+              <Gridbox />
               <Aboutbot />
               <Advantages />
             </div>
