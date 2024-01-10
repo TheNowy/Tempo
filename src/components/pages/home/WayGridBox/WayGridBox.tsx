@@ -55,7 +55,7 @@ const WayGridBox: React.FC = () => {
               <img src="../../../../Order.png" alt="Loading..." />
             </div>
             <div className={Style.last_tit}>
-              <h3>Оформитесь в таксопарке</h3>
+              <h3>Выходите на линию и получайте заказы</h3>
             </div>
           </div>
         </div>
