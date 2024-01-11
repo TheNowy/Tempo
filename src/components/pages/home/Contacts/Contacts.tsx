@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import scss from "./Conctacts.module.scss";
-import { Helmet } from "react-helmet";
 import Modal from "react-modal";
 
 const Contacts: React.FC = () => {
@@ -69,9 +68,6 @@ const Contacts: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Nowy - Contacts</title>
-      </Helmet>
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
           <div className={scss.home_content}>

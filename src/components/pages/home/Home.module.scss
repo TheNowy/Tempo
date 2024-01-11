@@ -5,7 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3f3f3;
+  background-image:linear-gradient() ,url("https://wallpapers.com/images/hd/new-york-street-qlzbm0e10peigy1a.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   min-height: 140vh;
 
   .container {
@@ -15,7 +17,7 @@
       display: flex;
       align-items: center;
       justify-content: start;
-      background-color: #f3f3f3;
+      background-color: rgba(243, 243, 243, 0);
       padding: 0 0 100px 0;
     }
   }
