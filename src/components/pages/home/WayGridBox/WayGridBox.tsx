@@ -20,20 +20,13 @@ const WayGridBox: React.FC = () => {
                 <h3 className={Style.way}>2</h3>
                 <hr />
                 <h3 className={Style.discription}>
-                  Мы позвоним вам,
-                  <br />
-                  чтобы уточнить
-                  <br />
-                  детали
+                  Мы позвоним вам, чтобы уточнить детали
                 </h3>
               </div>
               <div className={Style.grid_box}>
                 <h3 className={Style.way}>3</h3>
                 <hr />
-                <h3 className={Style.discription}>
-                  Оформитесь
-                  <br />в таксопарке
-                </h3>
+                <h3 className={Style.discription}>Оформитесь в таксопарке</h3>
               </div>
               <div className={Style.grid_box}>
                 <h3 className={Style.way}>4</h3>

@@ -11,12 +11,12 @@
     justify-content: start;
     align-items: start;
     max-width: 1220px;
-    padding: 85px 50px 105px 50px;
+    padding: 85px 50px 105px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
     background-color: #21201f;
-    border-radius: 48px;
+    border-radius: 20px;
 
     .main_title {
       h1 {
@@ -29,8 +29,6 @@
     .leader_wrapper {
       width: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
       padding: 0;
       .leader {
         position: relative;
@@ -58,17 +56,19 @@
             align-items: center;
             background-color: #fff;
             color: black;
-            width: 25px;
-            padding: 15px;
+            padding: 30px 20px;
+            width: 20px;
             border-radius: 20px;
             font-size: 20px;
             margin-top: 20px;
+            height: 0;
           }
           .discription {
+            text-align: start;
+            width: 70%;
             color: white;
             font-size: 20px;
             font-weight: 500;
-            margin-top: 20px;
           }
         }
       }
@@ -91,6 +91,7 @@
 @media (max-width: 700px) {
   .wrapper {
     .grid_wrapper {
+      padding: 85px 20px 85px;
       .leader_wrapper {
         .leader {
           grid-template-columns: repeat(1, minmax(270px, 1fr));
@@ -98,6 +99,9 @@
           .grid_box {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            padding: 0.5rem 0;
+
             &:first-child {
               hr {
                 display: none;
@@ -111,9 +115,19 @@
               transform: rotate(90deg);
             }
             .way {
+              z-index: 3;
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #fff;
+              color: black;
+              width: 15px;
+              height: 0;
+              border-radius: 13px;
               font-size: 20px;
-              padding: 15px 25px;
-              margin-right: 40px;
+              margin-top: 0;
+              margin-right: 25px;
             }
             .discription {
               display: flex;
@@ -125,7 +139,7 @@
       }
       .main_title {
         h1 {
-          font-size: 30px;
+          font-size: 35px;
         }
       }
     }
