@@ -39,15 +39,14 @@
       }
       p {
         z-index: 1;
-        color: white;
+        color: rgb(238, 238, 238);
         font-weight: 500;
         font-size: 20px;
         cursor: default;
 
         span {
-          color: rgb(255, 255, 255);
-          text-shadow: 0 0 10px white;
-          text-decoration: underline;
+          color: #ffffff;
+          font-weight: 600;
         }
       }
 
