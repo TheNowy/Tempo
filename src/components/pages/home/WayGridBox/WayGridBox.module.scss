@@ -32,8 +32,23 @@
       position: relative;
       z-index: 2;
 
+      &:hover {
+        box-shadow: 0 0 10px #4a2d8a;
+        transform: scale(1.2);
+        z-index: 3;
+      }
+
       .main_tit {
         width: 100%;
+        margin-bottom: 10px;
+
+        p {
+          box-shadow: 0 0 10px #4a2d8a;
+          background-color: #4a2d8a;
+          color: rgb(255, 255, 255);
+          border-radius: 10px;
+          padding: 10px;
+        }
       }
       .second_tit {
         width: 100%;
@@ -64,7 +79,7 @@
       width: 99%;
       height: 5px;
       border: none;
-      background-color: rgba(132, 132, 132, 0.68);
+      background-color: #4a2d8a;
     }
   }
 }
