@@ -3,7 +3,7 @@ import MainTitle from "./MainTitle/MainTitle";
 import Gridbox from "./GridBox/Gridbox";
 import Advantages from "./Advantages/Advantages";
 import Aboutbot from "./AboutBot/Aboutbot";
-import Contacts from "./Contacts/Contacts";
+// import Contacts from "./Contacts/Contacts";
 // import WayFlex from "./WayFlex/WayFlex";
 import WayGridBox from "./WayGridBox/WayGridBox";
 import { motion } from "framer-motion";
@@ -35,7 +35,7 @@ const Home = () => {
               {/* <WayFlex /> */}
               <WayGridBox />
               <Gridbox />
-              <Contacts />
+              {/* <Contacts /> */}
               <Aboutbot />
               <Advantages />
             </div>

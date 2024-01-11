@@ -4,93 +4,85 @@
   display: flex;
   flex-direction: column;
 
-  h1 {
-    font-size: 40px;
-    width: 100%;
-    padding: 20px 0;
-  }
   .grid_wrapper {
-    width: 100%;
-    padding: 10px 0;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(270px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    max-width: 1220px;
+    padding: 85px 50px 105px 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #21201f;
+    border-radius: 48px;
 
-    .grid_box {
-      display: flex;
-      flex-direction: column;
-      border: none;
-      border: solid rgb(255, 255, 255) 1px;
-      background-color: #fff;
-      padding: 30px 30px;
-      height: 19rem;
-      border-radius: 2rem;
-      overflow: hidden;
-      position: relative;
-      z-index: 2;
-
-      &:hover {
-        box-shadow: 0 0 15px #4a2d8a;
-        transform: scale(1.02);
-        z-index: 3;
-      }
-
-      .main_tit {
+    .main_title {
+      h1 {
+        font-size: 40px;
         width: 100%;
-        margin-bottom: 10px;
-
-        p {
-          box-shadow: 0 0 10px #4a2d8a;
-          background-color: #4a2d8a;
-          color: rgb(255, 255, 255);
-          border-radius: 10px;
-          padding: 10px;
-        }
-      }
-      .second_tit {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          width: 200px;
-        }
-
-        .JPN_Form {
-          width: 300px;
-        }
-      }
-      .last_tit {
-        width: 100%;
-        padding-bottom: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        padding: 20px 0;
+        color: white;
       }
     }
+    .leader_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      .leader {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(270px, 1fr));
+        justify-content: center;
+        align-items: center;
 
-    hr {
-      position: absolute;
-      width: 99%;
-      height: 5px;
-      border: none;
-      background-color: #4a2d8a;
+        .grid_box {
+          width: 100%;
+          padding: 2rem 0;
+          height: 100px;
+
+          hr {
+            position: relative;
+            top: -25px;
+            z-index: 2;
+          }
+
+          .way {
+            z-index: 3;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            color: black;
+            width: 25px;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 20px;
+            margin-top: 20px;
+          }
+          .discription {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+          }
+        }
+      }
     }
   }
 }
 
-@media (max-width: 1186px) {
+@media (max-width: 1329px) {
   .wrapper {
     .grid_wrapper {
-      grid-template-columns: repeat(2, minmax(270px, 1fr));
-
-      hr {
-        display: none;
+      .leader_wrapper {
+        .leader {
+          grid-template-columns: repeat(2, minmax(270px, 1fr));
+        }
       }
     }
   }
@@ -98,11 +90,44 @@
 
 @media (max-width: 700px) {
   .wrapper {
-    h1 {
-      font-size: 30px;
-    }
     .grid_wrapper {
-      grid-template-columns: repeat(1, minmax(270px, 1fr));
+      .leader_wrapper {
+        .leader {
+          grid-template-columns: repeat(1, minmax(270px, 1fr));
+
+          .grid_box {
+            display: flex;
+            flex-direction: row;
+            &:first-child {
+              hr {
+                display: none;
+              }
+            }
+            hr {
+              display: none;
+              position: relative;
+              left: -105px;
+              z-index: 2;
+              transform: rotate(90deg);
+            }
+            .way {
+              font-size: 20px;
+              padding: 15px 25px;
+              margin-right: 40px;
+            }
+            .discription {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+      .main_title {
+        h1 {
+          font-size: 30px;
+        }
+      }
     }
   }
 }
