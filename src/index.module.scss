@@ -1,6 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Kanit:600,600italic,700,700italic,800,800italic,900,900italic);
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    131.01deg,
+    #9d49f2 12.15%,
+    #7d62fb 75.57%,
+    #706cff 97.89%
+  );
+  z-index: 9999;
+}
 * {
   font-family: "Rubik", sans-serif;
   box-sizing: border-box;
