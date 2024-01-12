@@ -9,15 +9,15 @@ const MainTitle = () => {
             Стань <span>водителем</span> прямо сейчас и начни{" "}
             <span>зарабатывать</span>
           </h1>
-          <p>
+          {/* <p>
             <span>MangoKG</span> — волшебный мир свободы и заработка! Стань
             таксистом сегодня и ощути ветер перемен вместе с нами!.
-          </p>
+          </p> */}
           <div className={Style.Btn_Wrapper}>
-            <button className={`${Style.Discord_Add} ${Style.App_But}`}>
+            <button className={Style.Discord_Add}>
               Стать водителем
             </button>
-            <button className={Style.App_But}>Подробнее</button>
+            {/* <button className={Style.App_But}>Подробнее</button> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin-top: 50px;
 
@@ -159,7 +160,16 @@
 @media (max-width: 700px) {
   .wrapper {
     h1 {
+      width: 90%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
       font-size: 30px;
+    }
+    .Main_Box {
+      .box_grid {
+        padding: 30px 30px 2rem 30px;
+      }
     }
   }
 }
