@@ -20,6 +20,13 @@ const MainTitle = () => {
             {/* <button className={Style.App_But}>Подробнее</button> */}
           </div>
         </div>
+        <div className={Style.benefits_fast}>
+          <div className={Style.benefits_box}>
+            <div className={Style.benef_box}>
+              
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
