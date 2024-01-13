@@ -5,7 +5,7 @@ const MainTitle = () => {
     <>
       <div className={Style.Title_Wrapper}>
         <div className={Style.main_title}>
-          <h1>Стань водителем Yandex Такси и начни зарабатывать</h1>
+          <h1>Стань водителем <span>Yandex Такси</span> и начни зарабатывать</h1>
           {/* <p>
             <span>MangoKG</span> — волшебный мир свободы и заработка! Стань
             таксистом сегодня и ощути ветер перемен вместе с нами!.

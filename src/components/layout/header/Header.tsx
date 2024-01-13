@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Dropmenu from "./dropmenu/Dropmenu";
 import Style from "./Header.module.scss";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
-const container = {
-  hidden: { opacity: 1, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      staggerChildren: 0,
-    },
-  },
-};
+// const container = {
+//   hidden: { opacity: 1, scale: 0.9 },
+//   visible: {
+//     opacity: 1,
+//     scale: 1,
+//     transition: {
+//       staggerChildren: 0,
+//     },
+//   },
+// };
 
 // const dropmenuAnimation = {
 //   open: {
@@ -75,32 +75,26 @@ export const Header: React.FC = () => {
           headerScroll ? `${Style.header} ${Style.active}` : `${Style.header}`
         }>
         <div className={Style.header_wrapper}>
-          <motion.ul
-            className="container"
-            variants={container}
-            initial="hidden"
-            animate="visible">
-            <NavLink to="/" className={Style.logo}>
-              <img src="../../../../logo.png" alt="" />
+          <NavLink to="/" className={Style.logo}>
+            <img src="../../../../logo.jpg" alt="" />
+          </NavLink>
+          <div className={Style.links}>
+            <NavLink to="/" className={Style.linksD}>
+              Стать водителем
             </NavLink>
-            <div className={Style.links}>
-              <NavLink to="/" className={Style.linksD}>
-                Стать водителем
-              </NavLink>
-              <NavLink to="/" className={Style.linksD}>
-                Как начать
-              </NavLink>
-              <div
-                className={`${Style.burger} ${isOpen ? Style.open : ""}`}
-                onClick={() => {
-                  setOpenProfile((prev) => !prev);
-                  toggleMenu();
-                }}>
-                <span></span>
-                <span></span>
-              </div>
+            <NavLink to="/" className={Style.linksD}>
+              Как начать
+            </NavLink>
+            <div
+              className={`${Style.burger} ${isOpen ? Style.open : ""}`}
+              onClick={() => {
+                setOpenProfile((prev) => !prev);
+                toggleMenu();
+              }}>
+              <span></span>
+              <span></span>
             </div>
-          </motion.ul>
+          </div>
         </div>
       </div>
       <AnimatePresence>

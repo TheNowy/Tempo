@@ -27,24 +27,23 @@
   .header_wrapper {
     width: 86%;
     display: flex;
-    justify-content: start;
-
+    justify-content: space-between;
     padding: 1px;
+
     .logo {
-      width: 70px;
+      width: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0;
       img {
-        width: 60px;
+        width: 50px;
       }
     }
     .links {
       display: flex;
-      justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 29%;
       padding: 10px;
       .linksD {
         display: flex;
@@ -121,8 +120,9 @@
     .header_wrapper {
       overflow: hidden;
       display: flex;
-      justify-content: end;
       .links {
+        display: flex;
+        justify-content: end;
         .linksD {
           display: none;
         }
