@@ -11,17 +11,13 @@
   align-items: start;
 }
 .main_title {
-  width: 50%;
+  width: 100%;
   padding: 55px 0;
   h1 {
-    width: 100%;
+    width: 70%;
     margin-bottom: 40px;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
-
-    span {
-      color: #ffa200;
-    }
   }
   p {
     span {
@@ -32,7 +28,7 @@
     margin-bottom: 70px;
   }
   .Btn_Wrapper {
-    width: 100%;
+    width: 40%;
 
     display: flex;
     justify-content: start;
@@ -73,6 +69,9 @@
   .main_title {
     width: 100%;
     padding: 0 30px;
+    h1 {
+      width: 100%;
+    }
     .Btn_Wrapper {
       width: 100%;
 

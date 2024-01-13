@@ -76,7 +76,7 @@ export const Header: React.FC = () => {
         }>
         <div className={Style.header_wrapper}>
           <NavLink to="/" className={Style.logo}>
-            <img src="../../../../logo.jpg" alt="" />
+            <h1>MangoKG</h1>
           </NavLink>
           <div className={Style.links}>
             <NavLink to="/" className={Style.linksD}>
