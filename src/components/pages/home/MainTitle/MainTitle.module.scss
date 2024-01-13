@@ -18,12 +18,6 @@
     margin-bottom: 40px;
     font-size: 3rem;
     font-weight: 600;
-    span {
-      background: linear-gradient(90deg, #10bacd, #9d49f3, #fc6a8f, #f89311);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
   }
   p {
     span {
@@ -52,12 +46,12 @@
       border-radius: 20px;
       cursor: pointer;
       width: 100%;
-      background-color: #7e50e1;
+      background-color: #21201f;
       color: white;
       border: none;
 
       &:hover {
-        background-color: #8e59ff;
+        background-color: #000000;
         color: rgb(255, 255, 255);
       }
     }
