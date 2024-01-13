@@ -31,17 +31,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: none;
       font-weight: 500;
       font-size: 18px;
-      background-color: #7e50e1;
-      color: white;
       padding: 1rem 4rem;
       border-radius: 20px;
       cursor: pointer;
 
+      background-color: #21201f;
+      color: white;
+      border: none;
+
       &:hover {
-        background-color: #8e59ff;
+        background-color: #000000;
         color: rgb(255, 255, 255);
       }
     }

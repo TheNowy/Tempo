@@ -6,18 +6,16 @@ import Modal from "react-modal";
 const Contacts: React.FC = () => {
   const [username, setUsername] = useState<string>("");
   const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
   const [alertMessage, setAlertMessage] = useState<string>("");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-
+  const phone = useState("+996 ");
   const TOKEN = `6201317143:AAFo6tQ_BVQpE5hK2F5f47mkSesKYQRkeo8`;
   const CHAT_ID = "1814654847";
   const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const messageModel = (): string => {
     let messageTG = `Name: <b>${username}</b>\n`;
-    messageTG += `Email: <b>${email}</b>\n`;
-    messageTG += `Message: <b>${message}</b>\n`;
+    messageTG += `Phone: <b>${email}</b>\n`;
 
     return messageTG;
   };
@@ -46,7 +44,6 @@ const Contacts: React.FC = () => {
         setIsModalOpen(true);
         setUsername("");
         setEmail("");
-        setMessage("");
       })
       .catch((error) => {
         console.error(
@@ -71,6 +68,7 @@ const Contacts: React.FC = () => {
       <div className={scss.page_wrapper}>
         <div className={scss.container}>
           <div className={scss.home_content}>
+            <h1>Оставьте заявку</h1>
             {/* <div
               className={`${scss.gif_image} ${
                 headerScroll ? scss.active : ""
@@ -91,28 +89,17 @@ const Contacts: React.FC = () => {
                 />
               </label>
               <label className={scss.label} htmlFor="email">
-                Email
+                Phone
                 <input
-                  id="email"
+                  id="phone"
                   className={scss.input}
-                  type="email"
-                  placeholder="zhusup@example.com"
+                  placeholder="+996"
+                  type="tel"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
               </label>
-              <label className={scss.label} htmlFor="comment">
-                Сообщение
-                <textarea
-                  id="comment"
-                  className={scss.message}
-                  value={message}
-                  placeholder="Ваше сообщение"
-                  onChange={(e) => setMessage(e.target.value)}
-                  required></textarea>
-              </label>
-
               <button type="submit" className={scss.button}>
                 Отправить
               </button>

@@ -1,57 +1,32 @@
 .page_wrapper {
-  margin-top: 100px;
   width: 100%;
   .container {
+    display: flex;
+    width: 100%;
     .home_content {
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
+
       display: flex;
       align-items: center;
-      justify-content: center;
-      background-color: #fbfbfb;
+      justify-content: start;
+      flex-direction: column;
       border-radius: 40px;
 
-      padding: 5rem 0;
+      padding: 4rem 0;
 
-      .gif_image {
-        margin-right: 50px;
-        border-radius: 13px;
-        min-width: 600px;
-        max-width: 2000px;
-        padding: 18.4rem 13rem;
-        border: solid 1px #0d1117;
-        background-image: url("https://images.unsplash.com/photo-1535332371349-a5d229f49cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmlnaHQlMjBtb29ufGVufDB8fDB8fHww&w=1000&q=80");
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        transition: 0.3s;
-
-        &:hover {
-          box-shadow: 0 0 15px rgb(255, 255, 255);
-        }
-
-        .h1 {
-          background: -webkit-linear-gradient(-70deg, #6d2aff 0%, #ea00ff 100%);
-          background-clip: border-box;
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: rgba(0, 0, 0, 0);
-        }
+      h1 {
+        font-size: 40px;
+        color: #21201f;
       }
-
       .form {
         display: flex;
         justify-content: center;
         flex-direction: column;
 
-        width: 40rem;
+        width: 60%;
 
         padding: 2rem;
 
-        background-color: #fff;
         border: solid 1px rgb(189, 189, 189);
         border-radius: 13px;
 
@@ -94,88 +69,29 @@
           font-size: 16px;
           font-weight: 600;
           padding: 1rem;
-          border: none;
-          background-color: #4a2d8a;
-          color: white;
           border-radius: 13px;
           transition: 0.3s;
+          background-color: #21201f;
+          color: white;
+          border: none;
 
           &:hover {
-            box-shadow: 0 0 15px #4a2d8a;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
           }
         }
       }
     }
   }
 }
-@media (max-width: 1285px) {
+@media (max-width: 705px) {
   .page_wrapper {
     .container {
       .home_content {
         display: flex;
         flex-direction: column;
-        padding: 8rem 3rem;
-        .gif_image {
-          display: flex;
-          margin-right: 0;
-          margin-bottom: 20px;
-          border-radius: 13px;
-          min-width: 400px;
-          max-width: 400px;
-          padding: 8rem 6rem;
-        }
         .form {
-          min-width: 400px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 500px) {
-  .page_wrapper {
-    .container {
-      .home_content {
-        background-color: rgb(255, 255, 255);
-        &.active {
-          background-color: none;
-        }
-
-        .form {
-          background-color: #fff;
-          &.active {
-            background-color: #fff;
-          }
-          .label {
-            color: rgb(0, 0, 0);
-            &.active {
-              color: black;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 414px) {
-  .page_wrapper {
-    .container {
-      .home_content {
-        padding: 8rem 3rem;
-        .gif_image {
-          background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
-          &.active {
-            background-image: url("https://www.seti.org/sites/default/files/2020-10/earth-view-from-moon-perspective-footprints-1400px.jpg");
-          }
-          min-width: 300px;
-          max-width: 200px;
-          padding: 2rem 3.5rem;
-
-          .h1 {
-            font-size: 20px;
-          }
-        }
-        .form {
-          min-width: 300px;
+          width: 100%;
         }
       }
     }
