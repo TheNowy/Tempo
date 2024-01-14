@@ -8,7 +8,6 @@ const Contacts: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [alertMessage, setAlertMessage] = useState<string>("");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const phone = useState("+996 ");
   const TOKEN = `6201317143:AAFo6tQ_BVQpE5hK2F5f47mkSesKYQRkeo8`;
   const CHAT_ID = "1814654847";
   const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
