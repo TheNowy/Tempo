@@ -64,7 +64,7 @@ const Contacts: React.FC = () => {
 
   return (
     <>
-      <div className={scss.page_wrapper}>
+      <div id="contacts" className={scss.page_wrapper}>
         <div className={scss.container}>
           <div className={scss.home_content}>
             <h1>Оставьте заявку</h1>

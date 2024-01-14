@@ -1,46 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Dropmenu from "./dropmenu/Dropmenu";
 import Style from "./Header.module.scss";
 import { AnimatePresence } from "framer-motion";
-
-// const container = {
-//   hidden: { opacity: 1, scale: 0.9 },
-//   visible: {
-//     opacity: 1,
-//     scale: 1,
-//     transition: {
-//       staggerChildren: 0,
-//     },
-//   },
-// };
-
-// const dropmenuAnimation = {
-//   open: {
-//     opacity: 1,
-//     scale: 1,
-//     y: 25,
-//     transition: {
-//       opacity: { duration: 0.5 },
-//     },
-//   },
-//   closed: {
-//     opacity: 0,
-//     scale: 1,
-//     y: -20,
-//     transition: {
-//       opacity: { duration: 1 },
-//     },
-//   },
-//   exit: {
-//     opacity: 0,
-//     scale: 1,
-//     y: -20,
-//     transition: {
-//       opacity: { duration: 1 },
-//     },
-//   },
-// };
+import Dropmenu from "./dropmenu/Dropmenu";
 
 export const Header: React.FC = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
@@ -57,7 +19,7 @@ export const Header: React.FC = () => {
     };
 
     changeBackground();
-    -window.addEventListener("scroll", changeBackground);
+    window.addEventListener("scroll", changeBackground);
 
     return () => {
       window.removeEventListener("scroll", changeBackground);
@@ -66,6 +28,13 @@ export const Header: React.FC = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scrollToContacts = () => {
+    const contactsElement = document.getElementById("contacts");
+    if (contactsElement) {
+      contactsElement.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -79,12 +48,10 @@ export const Header: React.FC = () => {
             <h1>MangoKG</h1>
           </NavLink>
           <div className={Style.links}>
-            <NavLink to="/" className={Style.linksD}>
+            <button className={Style.linksD} onClick={scrollToContacts}>
               Стать водителем
-            </NavLink>
-            <NavLink to="/" className={Style.linksD}>
-              Как начать
-            </NavLink>
+            </button>
+            {/* Add other navigation links as needed */}
             <div
               className={`${Style.burger} ${isOpen ? Style.open : ""}`}
               onClick={() => {
@@ -118,3 +85,5 @@ export const Header: React.FC = () => {
     </nav>
   );
 };
+
+// Rest of the component remains unchanged
