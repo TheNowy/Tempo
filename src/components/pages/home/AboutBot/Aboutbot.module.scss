@@ -1,24 +1,22 @@
-.About_wrapper {
-  margin-top: 70px;
-
+.Slider_Wrapper {
   width: 100%;
-  min-height: 300px;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border: solid 1px #ececec;
-  border-radius: 40px;
-  background: #fbfbfb;
+  padding: 0;
 
-  .Info {
-    h1 {
+  .mySwiper {
+    width: 100%;
+    background: #fbfbfb;
+    border: solid 1px #ececec;
+    border-radius: 40px;
+
+    .Slider {
+      padding: 30vh 0;
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      font-size: 70px;
     }
   }
 }
