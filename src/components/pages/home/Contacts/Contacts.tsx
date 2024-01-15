@@ -75,7 +75,7 @@ const Contacts: React.FC = () => {
               <h1 className={scss.h1}>Contact Me</h1>
             </div> */}
             <form className={scss.form} onSubmit={handleSubmit}>
-              <label className={scss.label} htmlFor="name">
+              {/* <label className={scss.label} htmlFor="name">
                 Имя
                 <input
                   id="name"
@@ -86,9 +86,9 @@ const Contacts: React.FC = () => {
                   onChange={(e) => setUsername(e.target.value)}
                   required
                 />
-              </label>
+              </label> */}
               <label className={scss.label} htmlFor="email">
-                Phone
+                Номер Телефона
                 <input
                   id="phone"
                   className={scss.input}

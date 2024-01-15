@@ -44,7 +44,8 @@
     .links {
       display: flex;
       align-items: center;
-      width: 29%;
+      justify-content: space-between;
+      width: 26%;
       padding: 10px;
       .linksD {
         display: flex;
@@ -75,20 +76,8 @@
           right: 100%;
           opacity: 1;
         }
-
-        &:hover:nth-child(2):before {
-          width: 126px;
-          left: 0;
-          opacity: 1;
-          right: 0;
-        }
         &:hover:nth-child(1):before {
           width: 180px;
-          opacity: 1;
-          left: 0;
-        }
-        &:hover:nth-child(3):before {
-          width: 106px;
           opacity: 1;
           left: 0;
         }
@@ -104,6 +93,16 @@
           background-clip: text;
           -webkit-text-fill-color: rgba(0, 0, 0, 0);
         }
+      }
+      .linksSVG {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        padding: 10px;
+        color: white;
+        background-color: #21201f;
       }
       .burger {
         display: none;
@@ -130,7 +129,7 @@
           display: none;
         }
         .burger {
-          display: block;
+          display: none;
           width: 40px;
           height: 30px;
 

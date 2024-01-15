@@ -90,6 +90,10 @@
       .home_content {
         display: flex;
         flex-direction: column;
+
+        h1 {
+          padding: 2rem;
+        }
         .form {
           width: 100%;
         }

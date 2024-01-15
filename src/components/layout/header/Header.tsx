@@ -4,6 +4,8 @@ import Style from "./Header.module.scss";
 import { AnimatePresence } from "framer-motion";
 import Dropmenu from "./dropmenu/Dropmenu";
 
+import PhoneIcon from "@mui/icons-material/Phone";
+
 export const Header: React.FC = () => {
   const [headerScroll, setHeaderScroll] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +53,9 @@ export const Header: React.FC = () => {
             <button className={Style.linksD} onClick={scrollToContacts}>
               Стать водителем
             </button>
-            {/* Add other navigation links as needed */}
+            <NavLink to="/" className={Style.linksSVG} onClick={scrollToContacts}>
+              <PhoneIcon />
+            </NavLink>
             <div
               className={`${Style.burger} ${isOpen ? Style.open : ""}`}
               onClick={() => {
@@ -85,5 +89,3 @@ export const Header: React.FC = () => {
     </nav>
   );
 };
-
-// Rest of the component remains unchanged
