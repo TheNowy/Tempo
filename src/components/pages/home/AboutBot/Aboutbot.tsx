@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
 
 import Style from "./Aboutbot.module.scss";
 
@@ -27,9 +29,19 @@ const Aboutbot = () => {
           }}
           // navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className={`${Style.mySwiper} custom-swiper-pagination`}>
-          <SwiperSlide className={Style.Slider}>Slide 1</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 2</SwiperSlide>
+          className={Style.mySwiper}>
+          <SwiperSlide className={Style.Slider}>
+            <div className={Style.mislide_wrapper}>
+              <ElectricBoltIcon />
+              <h1>Реальная тех поддержка</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            <div className={Style.mislide_wrapper}>
+              <AttachMoneyIcon />
+              <h1>Реальная тех поддержка</h1>
+            </div>
+          </SwiperSlide>
           <SwiperSlide className={Style.Slider}>Slide 3</SwiperSlide>
           <SwiperSlide className={Style.Slider}>Slide 4</SwiperSlide>
         </Swiper>

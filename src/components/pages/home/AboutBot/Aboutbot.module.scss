@@ -10,8 +10,9 @@
     align-items: center;
 
     .Slider {
+      height: 65vh;
       border-radius: 30px;
-      padding: 30vh 0;
+      padding: 0;
       width: 100%;
       text-align: center;
       font-size: 18px;
@@ -20,6 +21,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .mislide_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        svg {
+          font-size: 100px;
+          color: #21201f;
+        }
+
+        h1 {
+          color: #21201f;
+        }
+      }
     }
   }
 }
