@@ -1,6 +1,13 @@
 import Style from "./MainTitle.module.scss";
 
 const MainTitle = () => {
+  const scrollToContacts = () => {
+    const contactsElement = document.getElementById("contacts");
+    if (contactsElement) {
+      contactsElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className={Style.Title_Wrapper}>
@@ -11,7 +18,9 @@ const MainTitle = () => {
             таксистом сегодня и ощути ветер перемен вместе с нами!.
           </p> */}
           <div className={Style.Btn_Wrapper}>
-            <button className={Style.Discord_Add}>Подключится</button>
+            <button className={Style.Discord_Add} onClick={scrollToContacts}>
+              Подключится
+            </button>
             {/* <button className={Style.App_But}>Подробнее</button> */}
           </div>
         </div>
