@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import PercentIcon from "@mui/icons-material/Percent";
 
 import Style from "./Aboutbot.module.scss";
 
@@ -40,17 +41,23 @@ const Aboutbot = () => {
           <SwiperSlide className={Style.Slider}>
             <div className={Style.mislide_wrapper}>
               <AttachMoneyIcon />
-              <h1>Реальная тех поддержка</h1>
+              <h1>Оплата за наличные заказы сразу</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide className={Style.Slider}>
             {" "}
             <div className={Style.mislide_wrapper}>
               <AccessTimeIcon />
-              <h1>Реальная тех поддержка</h1>
+              <h1>Комфортное расписание</h1>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 4</SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            {" "}
+            <div className={Style.mislide_wrapper}>
+              <PercentIcon />
+              <h1>Минимальная комиссия</h1>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
       {/* Laptop Media */}
@@ -69,10 +76,32 @@ const Aboutbot = () => {
           // navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className={`${Style.mySwiper} custom-swiper-pagination`}>
-          <SwiperSlide className={Style.Slider}>Slide 1</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 2</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 3</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 4</SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            <div className={Style.mislide_wrapper}>
+              <ElectricBoltIcon />
+              <h1>Реальная тех поддержка</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            <div className={Style.mislide_wrapper}>
+              <AttachMoneyIcon />
+              <h1>Оплата за наличные заказы сразу</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            {" "}
+            <div className={Style.mislide_wrapper}>
+              <AccessTimeIcon />
+              <h1>Комфортное расписание</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            {" "}
+            <div className={Style.mislide_wrapper}>
+              <PercentIcon />
+              <h1>Минимальная комиссия</h1>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
       {/* Phone Media */}
@@ -91,10 +120,32 @@ const Aboutbot = () => {
           // navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className={`${Style.mySwiper} custom-swiper-pagination`}>
-          <SwiperSlide className={Style.Slider}>Slide 1</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 2</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 3</SwiperSlide>
-          <SwiperSlide className={Style.Slider}>Slide 4</SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            <div className={Style.mislide_wrapper}>
+              <ElectricBoltIcon />
+              <h1>Реальная тех поддержка</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            <div className={Style.mislide_wrapper}>
+              <AttachMoneyIcon />
+              <h1>Оплата за наличные заказы сразу</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            {" "}
+            <div className={Style.mislide_wrapper}>
+              <AccessTimeIcon />
+              <h1>Комфортное расписание</h1>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={Style.Slider}>
+            {" "}
+            <div className={Style.mislide_wrapper}>
+              <PercentIcon />
+              <h1>Минимальная комиссия</h1>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </>
