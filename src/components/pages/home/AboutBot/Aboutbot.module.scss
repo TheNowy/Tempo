@@ -1,5 +1,6 @@
 .Slider_Wrapper {
   width: 100%;
+  margin-top: 50px;
   padding: 0;
 
   .mySwiper {
@@ -16,11 +17,12 @@
       width: 100%;
       text-align: center;
       font-size: 18px;
-      background: #fbfbfb;
+      background: white;
       border: solid 1px #ececec;
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: 0 0 10px white;
 
       .mislide_wrapper {
         display: flex;

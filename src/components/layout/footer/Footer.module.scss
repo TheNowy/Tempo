@@ -5,17 +5,29 @@ footer {
     display: flex;
     position: relative;
     width: 100%;
-    justify-content: center;
+    padding: 0 30px;
+    justify-content: space-between;
     align-items: center;
     background-color: #f3f3f3;
     border: none;
     h1 {
       padding: 10px;
       color: rgb(0, 0, 0);
-      font-size: 17px;
-      font-weight: 100;
+      font-size: 15px;
+      font-weight: 200;
       font-family: "Kanit", sans-serif;
       font-family: "Rubik", sans-serif;
+    }
+    .Designed {
+      color: black;
+      font-weight: 600;
+    }
+    span {
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 6px;
+      background-color: black;
+      color: white;
     }
   }
 }
