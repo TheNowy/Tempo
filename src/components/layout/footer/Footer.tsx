@@ -6,7 +6,9 @@ export const Footer = () => {
       <footer>
         <div className={Style.footer_cont}>
           <h1 className={Style.Designed}>
-            Designed by <span>Nowy</span>
+            <a href="https://nowy.netlify.app/">
+              Designed by <span>Nowy</span>
+            </a>
           </h1>
         </div>
       </footer>
