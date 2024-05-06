@@ -1,6 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Kanit:600,600italic,700,700italic,800,800italic,900,900italic);
 
+// :root {
+//   --size: 1px;
+// }
+
+// html {
+//   font-size: --(size);
+// }
+
 body::before {
   content: "";
   position: fixed;
