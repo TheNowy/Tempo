@@ -6,6 +6,8 @@
 
   .container {
     .Home_Content {
+      position: relative;
+      top: 150px;
       width: 100%;
       flex-direction: column;
       margin-left: auto;
@@ -17,7 +19,6 @@
       min-height: 140vh;
       transition: 1s ease;
       .main_title {
-        position: absolute;
         top: 8rem;
         width: 90%;
 
@@ -37,7 +38,6 @@
         }
       }
       .mini_title {
-        position: absolute;
         top: 15rem;
         width: 90%;
         display: flex;
